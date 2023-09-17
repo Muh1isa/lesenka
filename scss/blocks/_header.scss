@@ -1,0 +1,84 @@
+.header {
+    background-color: #F4F4F4;
+    padding: 30px 0;
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        &-logo {
+            display: flex;
+            gap: 20px;
+            flex: 4;
+            p {
+                font-weight: 600;
+            }
+        }
+        &-list {
+            display: flex;
+            gap: 40px;
+            flex: 6;
+            &-item a {
+                font-style: 15px;
+                color: $mainColor;
+            }
+        }
+        &-extra {
+            flex: 2;
+            margin: 30px 0 0 0;
+            a {
+                font-size: 20px;
+                font-weight: 600;
+                color: $mainColor;
+            }
+            button {
+                @include btn;
+                margin: 5px 0 0 0;
+            }
+        }
+        .fa-bars {
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        &__nav {
+            &-list, &-extra {
+                display: none;
+            }
+            .fa-bars {
+                display: block;
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .header {
+        &__nav {
+            &-logo {
+                a {
+                    img {
+                        width: 90px;
+                    }
+                }
+                p {
+                    display: none;
+                }
+            }
+            &-list, &-extra {
+                display: none;
+            }
+            .fa-bars {
+                display: block;
+                font-size: 32px;
+            }
+        }
+    }
+}

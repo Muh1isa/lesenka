@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+$mainColor: #202020;
+
+.container-big{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@mixin btn {
+    font-size: 16px;
+    padding: 12px 22px;
+    color: #fff;
+    background-color: #FF9646;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+span {
+    font-weight: 700;
+}

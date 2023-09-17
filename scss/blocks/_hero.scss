@@ -1,0 +1,135 @@
+.hero {
+    height: 680px;
+    background-color: #f4f4f4;
+    padding: 50px 0 0 0;
+    &__bg {
+        position: absolute;
+        width: 470px;
+        height: 842px;
+        background-color: #F9BB88;
+        top: 0px;
+    }
+    &__wrapper{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        margin: 0 auto 0 20px;
+        img {
+            margin: 0 90px 0 0;
+        }
+        &-btn {
+            @include btn;
+        }
+        &-text {
+            color: #FF9646;
+            margin: 30px 0 0 0;
+        }
+        h1 {
+            font-size: 45px;
+            margin: 0 0 30px 0;
+        }
+        hr {
+            position: relative;
+            width: 500px;
+            height: 3px;
+            background-color:  #F9BB88;
+            border: none;
+            left: -280px;
+        }
+        &-text2 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            margin: 30px 0;
+        }
+        &-box2 {
+            position: absolute;
+            width: 380px;
+            height: 180px;
+            background-color: $mainColor;
+            bottom: -180px;
+            left: 440px;
+            padding: 30px 60px;
+            &-title {
+                color: #fff;
+                font-weight: 400;
+            }
+            &-btn {
+                padding: 12px 30px;
+                background-color: #fff;
+                border: none;
+                margin: 20px 0 0 0;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        width: 100%;
+        height: 980px;
+        &__bg {
+            width: 380px;
+            height: 1102px;
+            top: 0;
+        }
+        &__wrapper{
+            width: 100%;
+            display: block;
+            margin: -40px 0 0 0;
+            img {
+                width: 107%;
+                margin-left: -30px;
+            }
+            &-box {
+                position: absolute;
+                right: -140px;
+            }
+            &-box2 {
+                width: 340px;
+                left: 20px;
+                bottom: -200px;
+                padding: 30px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .hero {
+        width: 100%;
+        height: 800px;
+        &__bg {
+            width: 140px;
+            height: 904px;
+            top: 0;
+        }
+        &__wrapper{
+            width: 100%;
+            display: block;
+            margin: -50px 0 0 0;
+            img {
+                width: 120%;
+            }
+            &-box {
+                position: absolute;
+                right: -270px;
+            }
+            &-text, &-text2 {
+                font-size: 10px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            &-box2 {
+                width: 340px;
+                left: 25px;
+                bottom: -580px;
+                padding: 30px;
+            }
+        }
+    }
+}
