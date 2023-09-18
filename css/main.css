@@ -829,6 +829,7 @@ span {
 @media screen and (max-width: 768px) {
   .section7 {
     width: 100%;
+    height: 700px;
   }
   .section7__list {
     width: 100%;
@@ -837,6 +838,9 @@ span {
   .section7__list-item {
     width: 350px;
     height: 200px;
+  }
+  .section7__bg {
+    height: 700px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -855,6 +859,77 @@ span {
   .section7__bg {
     width: 80px;
     height: 980px;
+  }
+}
+.section8 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 760px;
+}
+.section8 img {
+  width: 650px;
+  border: 8px solid #FDE4CF;
+}
+.section8__title {
+  position: relative;
+  font-size: 36px;
+  color: #202020;
+  margin: 0 0 30px 0;
+}
+.section8__title::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 20px;
+  background-color: #F9BB88;
+  bottom: -2px;
+  left: -40px;
+  z-index: -1;
+}
+.section8__text {
+  width: 480px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #202020;
+  margin: 0 0 20px 0;
+}
+.section8 input {
+  width: 400px;
+  height: 36px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #202020;
+}
+.section8 button {
+  font-size: 16px;
+  padding: 12px 22px;
+  color: #fff;
+  background-color: #FF9646;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 20px 0 0 0;
+}
+.section8 .link {
+  font-size: 14px;
+  color: #202020;
+}
+.section8 .link span {
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .section8 {
+    width: 100%;
+    height: 600px;
+    display: block;
+    margin: 60px 0 0 30px;
+  }
+  .section8 img {
+    display: none;
   }
 }
 
